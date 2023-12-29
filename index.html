@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <link rel="stylesheet" href="Pig Game Style.css">
+   <script defer src="Pig Game Script.js"></script>
+    </style>
+  </head>
+  <body>
+    <!--  <img class="bgImg" src="https://wallpaperaccess.com/full/202978.jpg" /> -->
+
+    <section class="flex-container">
+      <button class="btn new">🔁 New Game</button>
+      <button class="btn hold">📥 Hold</button>
+      <button class="btn roll">🎲 Roll Dice</button>
+      
+
+      <img class="dice hidden" src="dice-1.png" />
+      <img class="dice hidden" src="dice-2.png" />
+      <img class="dice hidden" src="dice-3.png" />
+      <img class="dice hidden" src="dice-4.png" />
+      <img class="dice hidden" src="dice-5.png" />
+      <img class="dice hidden" src="dice-6.png" />
+
+      <div class="player-div1 active">
+        <h2 class="player-name">Player 1</h2>
+        <span class="total-score active">42</span>
+        <div class="current-score-div">
+          <p>Current<br /><span class="score active">0</span></p>
+        </div>
+      </div>
+      <div class="player-div2">
+        <h2 class="player-name">Player 2</h2>
+        <span class="total-score">42</span>
+        <div class="current-score-div">
+          <p>Current<br /><span class="score">0</span></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay hidden"></div>
+    <div class="winner hidden">
+      Winner
+    </div>
+    <form action="#" method="get">
+      <input class="start hidden" type="button" value="Cancel">
+  </body>
+</html>
